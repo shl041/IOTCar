@@ -37,7 +37,7 @@ def main():
 
     steer1 = RCControl()
     newObj = SocketClass()
-    socketIO = SocketIO('drivecar.mybluemix.net', 80)
+    socketIO = SocketIO('shl041.mybluemix.net', 80)
     
     socketIO.on('message', newObj.getSocket)
     socketIO.wait()
